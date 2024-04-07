@@ -5,7 +5,9 @@ import { Transition } from '@headlessui/react'
 // import Image from 'next/image'
 // import FeaturesBg from '@/public/images/features-bg.png'
 // import FeaturesElement from '@/public/images/features-element.png'
-
+import FootBallPlayer from '../icons/football-player1.png'
+import BrandIcon from '../icons/brand-image1.png'
+import DigitalIcon from '../icons/advertisig-agency1.png'
 export default function Features() {
   
   const [tab, setTab] = useState(1)
@@ -21,75 +23,75 @@ export default function Features() {
   }, []) 
 
   return (
-    <section className="relative mt-16">
+    <section className="relative isolate overflow-hidden bg-gray-900 sm:py-24 lg:py-32">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      <div className="absolute inset-0 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h1 className="h2 mb-4 text-6xl text-gray-100 font-semibold font-family-poppins">Our Services</h1>
+            <p className="text-xl text-gray-200">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
+          <div className="md:grid md:grid-cols-12 md:gap-16">
 
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
+              {/* <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>
                 <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-              </div>
+              </div> */}
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex bg-blue-400 items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'shadow-md  opacity-20  border-gray-200 hover:shadow-lg' : ' border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold text-gray-100 leading-snug tracking-tight mb-1">For Right Holders</div>
+                    <div className="text-gray-300">Take collaboration to the next level with security and administrative features built for teams.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                    </svg>
+                      <img className="w-6 h-6 fill-current" src={FootBallPlayer} alt="footballPlayer" />
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex bg-blue-400 items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'opacity-20  shadow-md border-gray-200 hover:shadow-lg' : 'border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold text-gray-100 leading-snug tracking-tight mb-1">For Brands</div>
+                    <div className="text-gray-300">Take collaboration to the next level with security and administrative features built for teams.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fillRule="nonzero" />
-                    </svg>
+                    </svg> */}
+                      <img className="w-6 h-6 fill-current" src={BrandIcon} alt="BrandIcon" />
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex bg-blue-400 items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? '  opacity-20  shadow-md border-gray-200 hover:shadow-lg' : 'border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold text-gray-100 leading-snug tracking-tight mb-1">Digital and Broadcasting Services</div>
+                    <div className="text-gray-300">Take collaboration to the next level with security and administrative features built for teams.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fillRule="nonzero" />
-                    </svg>
+                    </svg> */}
+                      <img className="w-6 h-6 fill-current" src={DigitalIcon} alt="Digital and broadcasting" />
                   </div>
                 </a>
               </div>
@@ -114,8 +116,14 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <img className="md:max-w-none mx-auto rounded" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
-                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <h1 align="center" className='text-4xl font-bold text-blue-400 font-family-poppins mt-5'>For Right Holders</h1>
+                      <p className='mt-5 text-center text-lg text-gray-100 font-family-poppins leading-8'>
+                        Goleador Sport Consulting maximizes the commercial potential of your sports 
+                        organization by offering strategic marketing, restructuring of assets, and securing 
+                        lucrative partnerships.
+                      </p>
+                      {/* <img className="md:max-w-none mx-auto rounded mt-5" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
+                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -133,8 +141,14 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <img className="md:max-w-none mx-auto rounded" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
-                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <h1 align="center" className='text-4xl font-bold text-blue-400 font-family-poppins mt-5'>For Brands</h1>
+                      <p className='mt-5 text-center text-lg text-gray-100 font-family-poppins leading-8'>
+                          Our sports marketing consulting enhances brand visibility through strategic partnerships 
+                          and engaging campaigns. We prioritize creating memorable brand experiences at live 
+                          events while optimizing budget allocation. Our goal is to establish a strong and cost-effective presence for your brand in the sports industry
+                      </p>
+                      {/* <img className="md:max-w-none mx-auto rounded mt-5" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
+                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -152,8 +166,15 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <img className="md:max-w-none mx-auto rounded" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
-                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <h1 align="center" className='text-4xl font-bold text-blue-400 font-family-poppins mt-5'>Digital and Broadcasting Services</h1>
+                      <p className='mt-5 text-center text-lg text-gray-100 font-family-poppins leading-8'>
+                        Elevate your sports content with Goleador's Digital & Broadcasting Services. From 
+                        seamless TV distribution and marketing of broadcasting rights to cutting-edge graphics 
+                        and advanced sports data, we transform your digital presence, engage audiences, and 
+                        amplify the impact of your broadcasts.
+                      </p>
+                      {/* <img className="md:max-w-none mx-auto rounded mt-5" src={"http://localhost:3000/images/features-bg.png"} width={500} height="462" alt="Features bg" />
+                      <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={"http://localhost:3000/images/features-element.png"} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                 </div>

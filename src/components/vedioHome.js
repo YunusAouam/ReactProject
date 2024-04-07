@@ -3,7 +3,7 @@ function VedioHome() {
     <>
     
     <div
-      className="shadow-md w-5/6 m-auto grid grid-cols-23 text-hero-left-content z-0 [&>*]:text-left grid-rows-[1fr_auto] gap-y-4 md:gap-y-10 md:relative md:min-h-[41rem] black [&>*:first-child]:md:pt-16 [&>.cta-list]:md:pb-16 col-span-23 col-start-2 row-start-1"
+      className="bg-gray-900 w-full grid grid-cols-23 text-hero-left-content z-0 [&>*]:text-left grid-rows-[1fr_auto] gap-y-4 md:gap-y-10 md:relative md:min-h-[41rem] black [&>*:first-child]:md:pt-16 [&>.cta-list]:md:pb-16 col-span-23 col-start-2 row-start-1"
       style={{ aspectRatio: "16/9" }}
     >
       {/* <div className="row-[1_/_span_1] col-[2_/_span_21] flex flex-col gap-4 justify-end pointer-events-none md:min-h-[unset] [&>*:last-child]:pb-14 min-h-[41.875rem] md:!col-[2_/_span_13] md:[&>*:last-child]:pb-0 pointer-events-none">
@@ -14,7 +14,7 @@ function VedioHome() {
           Everything you need to make, manage, and share brilliant videos.
         </p>
       </div> */}
-      <div className="row-[2_/_span_1] flex flex-col gap-4 md:flex-row md:justify-between md:col-[2_/_span_21] col-[1_/_span_22] pb-4">
+      {/* <div className="row-[2_/_span_1] flex flex-col gap-4 md:flex-row md:justify-between md:col-[2_/_span_21] col-[1_/_span_22] pb-4">
         <ul className="cta-list flex flex-col gap-2 md:flex-row h-fit">
           <li>
             <a
@@ -109,11 +109,11 @@ function VedioHome() {
             287 million creatives, entrepreneurs, and businesses trust Vimeo
           </div>
         </div>
-      </div>
-      <div className="w-full h-full rounded-2xl md:rounded-3.5xl -z-[1] col-[1_/_span_23] p-0 md:absolute md:w-full md:h-full row-[1_/_span_1] md:row-[1_/_span_2]">
+      </div> */}
+      <div className="w-full rounded-2xl md:rounded-3.5xl -z-[1] col-[1_/_span_23] p-0 md:absolute md:w-5/6 md:left-32 md:h-220 row-[1_/_span_1] md:row-[1_/_span_2]">
         <div className="w-full h-full relative hidden md:block z-0">
           <video
-            className="relative z-[1] inline w-full h-full rounded-2xl md:rounded-3.5xl w-full h-full object-center object-cover  rounded-2xl md:rounded-3.5xl w-full h-full object-center object-cover"
+            className="relative z-[1] inline w-full h-full rounded-2xl md:rounded-3.5xl w-full h-full object-center object-cover  rounded-2xl md:rounded-3.5xl"
             preload="metadata"
             data-src="https://player.vimeo.com/progressive_redirect/playback/840627949/rendition/1080p/file.mp4?loc=external&signature=df9cfec6465233ea6f14bd85906ac7412e35a0a00e65cdb6823b45d2b2cf5607"
             loop
@@ -135,7 +135,7 @@ function VedioHome() {
             src="https://player.vimeo.com/progressive_redirect/playback/840627949/rendition/1080p/file.mp4?loc=external&signature=df9cfec6465233ea6f14bd85906ac7412e35a0a00e65cdb6823b45d2b2cf5607"
           />
         </div>
-        <div className="w-full h-full relative block md:hidden z-0">
+        <div className="w-5/6 m-auto h-full relative block md:hidden z-0">
           <video
             className="relative z-[1] inline rounded-2xl md:rounded-3.5xl w-full h-full object-center object-cover md:rounded-3.5xl"
             preload="metadata"
@@ -149,6 +149,15 @@ function VedioHome() {
           {/* <video className="hidden filter-[unset] w-full h-full md:transform-gpu md:translate-x-0 md:translate-y-0 md:absolute md:z-0 md:inline md:top-0 md:left-0 rounded-2xl md:rounded-3.5xl w-full h-full object-center object-cover md:blur-2xl" preload="none" aria-hidden="false" data-src="https://player.vimeo.com/progressive_redirect/playback/844715170/rendition/360p/file.mp4?loc=external&signature=dc53d02bb919cc3f758c0b75bd454fcdc9a32c17757eac4b5c8131ed32e80674" loop playsInline autoPlay id="hero-v3-asset-d0.2595185407285845" /> */}
         </div>
       </div>
+      {/* <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div
+          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
+        />
+      </div> */}
     </div>
     </>
   );
