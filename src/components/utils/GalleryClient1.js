@@ -17,7 +17,7 @@ const GalleryClient1 = () => {
                         <div className="w-1/2 p-1 md:p-2">
                             <img
                                 alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                                 src={'images/Indrive/image00005.jpeg'} 
                                 onClick={(event) => {
                                     setImg(event.target.src);
@@ -29,7 +29,7 @@ const GalleryClient1 = () => {
                         <div className="w-1/2 p-1 md:p-2">
                             <img
                                 alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                                 src={'images/Indrive/image00004.jpeg'} 
                                 
                                 onClick={(event) => {
@@ -42,7 +42,7 @@ const GalleryClient1 = () => {
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                                className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                                 src={'images/Indrive/image00001.jpeg'} 
                                 
                                 onClick={(event) => {
@@ -57,7 +57,7 @@ const GalleryClient1 = () => {
                     <div className="w-full p-1 md:p-2">
                         <img
                             alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                             src={'images/Indrive/image00006.jpeg'} 
                             
                             onClick={(event) => {
@@ -70,7 +70,7 @@ const GalleryClient1 = () => {
                     <div className="w-1/2 p-1 md:p-2">
                         <img
                             alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                             src={'images/Indrive/image00008.jpeg'} 
                             
                             onClick={(event) => {
@@ -83,7 +83,7 @@ const GalleryClient1 = () => {
                     <div className="w-1/2 p-1 md:p-2">
                         <img
                             alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-25 cursor-pointer"
+                            className="block h-full w-full rounded-lg object-cover object-center hover:opacity-50 cursor-pointer"
                             src={'images/Indrive/image00001.jpeg'} 
                             
                             onClick={(event) => {
